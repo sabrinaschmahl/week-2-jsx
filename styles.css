@@ -152,6 +152,20 @@ body {
     background-color: #D8D6CE;
 }
 
+.download-button.tertiary {
+    background-color: transparent;
+    border: 1px solid rgba(38, 37, 30, 0.3);
+    color: #26251e;
+}
+
+.download-button.tertiary:hover {
+    background-color: #e4e2dc;
+}
+
+.download-button.tertiary:active {
+    background-color: #D8D6CE;
+}
+
 /* Primary variant: dark background (e.g. Get Pro) */
 .download-button.primary {
     background-color: #111;
@@ -165,6 +179,7 @@ body {
 .download-button.primary:active {
     background-color: #333;
 }
+
 
 /* ============================================
    PAGE LABEL
