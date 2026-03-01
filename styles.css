@@ -1,9 +1,15 @@
+/* ============================================
+   GLOBAL
+   ============================================ */
+
+/* Reset: no default margins/padding; box-sizing for layout */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Page: centered layout, off-white background, Inter font */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +20,11 @@ body {
     padding: 20px;
 }
 
+/* ============================================
+   LAYOUT — Cards container
+   ============================================ */
+
+/* Wraps all pricing cards; horizontal flex, 24px gap */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +34,11 @@ body {
     align-items: flex-start;
 }
 
+/* ============================================
+   CARD — Structure
+   ============================================ */
+
+/* Single pricing card: 320px wide, min-height 380px, card background */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +50,17 @@ body {
     flex-shrink: 0;
 }
 
+/* Top section of card: title, price, content (no button) */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* ============================================
+   CARD — Typography & price
+   ============================================ */
+
+/* Plan name (e.g. Hobby, Pro) */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +69,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row: amount + optional period (e.g. /mo.) */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -60,15 +83,21 @@ body {
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Small text for “/mo.” etc. */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* ============================================
+   CARD — Content & features list
+   ============================================ */
+
 .card-content {
     margin-bottom: 32px;
 }
 
+/* “Includes:” / “Everything in Hobby, plus:” */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
@@ -88,6 +117,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark (✓) before each feature */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +125,11 @@ body {
     font-weight: 400;
 }
 
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+/* Base: pill shape, sits at bottom of card (margin-top: auto) */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -117,6 +152,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Primary variant: dark background (e.g. Get Pro) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
@@ -130,6 +166,11 @@ body {
     background-color: #333;
 }
 
+/* ============================================
+   PAGE LABEL
+   ============================================ */
+
+/* Fixed badge at top center (“HTML version — static markup”) */
 .page-label {
     position: fixed;
     top: 16px;
