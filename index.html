@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+    <!-- Fonts: preconnect for faster load -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter: 400, 500, 600, 700 — see styles.css body -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main styles: layout, cards, buttons -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page label: fixed badge, styled in .page-label -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Cards wrapper: horizontal flex, gap 24px — .cards-container -->
     <div class="cards-container">
+        <!-- Card 1: Hobby plan — .card + .card-top -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -38,6 +45,39 @@
             </div>
             <button class="download-button secondary">Download</button>
         </div>
+
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Org</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">199</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Includes:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            No credit card required
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Unlimited Agent requests
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Unlimited Tab completions
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Background Agents
+                        </li>
+                    </ul>   
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 2: Pro plan — .card-price-period for “/mo.” -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
